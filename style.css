@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "OpenSansRegular";
+    src: url("font/OpenSansRegular.eot");
+    src: url("font/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+    url("font/OpenSansRegular.woff") format("woff"),
+    url("font/OpenSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+html {
+    font-family: "OpenSansRegular", "Myriad Pro", "Myriad Web", "Tahoma", "Helvetica", "Arial", sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+    color: #004370;
+    background-color: #bbb;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#header {
+    width:100%;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+#header h2 {
+    text-align: center;
+    padding: 10px;
+    color: #004370;
+}
+
+.formTitle {
+    text-align: center;
+    font-size: 18px;
+}
+
+#wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.form {
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 22px rgba(0, 0, 0, 0.26);
+    border: 1px solid rgba(255, 255, 255, 0.44);
+    padding: 10px;
+
+}
+
+#leftSide,#rightSide {
+    width: 40%;
+    margin: 0 0 10px 0;
+    display: inline-block;
+}
+
+#leftSide {
+    float: left;
+}
+
+#rightSide {
+    float: right;
+}
+
+input[type="text"] {
+    font-family: "OpenSansRegular", sans-serif;
+    font-size: 18px;
+    display: block;
+    width: 90%;
+    margin:0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 7px;
+    border: solid 1px rgb(143, 143, 143);
+}
+
+.myButton {
+    -moz-box-shadow:inset 0px 1px 0px 0px #7a8eb9;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #7a8eb9;
+    box-shadow:inset 0px 1px 0px 0px #7a8eb9;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #637aad), color-stop(1, #5972a7));
+    background:-moz-linear-gradient(top, #637aad 5%, #5972a7 100%);
+    background:-webkit-linear-gradient(top, #637aad 5%, #5972a7 100%);
+    background:-o-linear-gradient(top, #637aad 5%, #5972a7 100%);
+    background:-ms-linear-gradient(top, #637aad 5%, #5972a7 100%);
+    background:linear-gradient(to bottom, #637aad 5%, #5972a7 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#637aad', endColorstr='#5972a7',GradientType=0);
+    background-color:#637aad;
+    border:1px solid #314179;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:13px;
+    font-weight:bold;
+    padding:6px 12px;
+    text-decoration:none;
+}
+.myButton:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5972a7), color-stop(1, #637aad));
+    background:-moz-linear-gradient(top, #5972a7 5%, #637aad 100%);
+    background:-webkit-linear-gradient(top, #5972a7 5%, #637aad 100%);
+    background:-o-linear-gradient(top, #5972a7 5%, #637aad 100%);
+    background:-ms-linear-gradient(top, #5972a7 5%, #637aad 100%);
+    background:linear-gradient(to bottom, #5972a7 5%, #637aad 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5972a7', endColorstr='#637aad',GradientType=0);
+    background-color:#5972a7;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+
+
+
+input[type=button],button,#closeEdit:hover {
+    cursor: pointer;
+}
+
+input::-webkit-input-placeholder {
+    font-family: "OpenSansRegular",sans-serif;
+}
+
+.book {
+    font-size: 18px;
+    border-bottom: 1px solid #000000;
+    padding: 10px;
+    color:#000;
+}
+
+.book p {
+    padding-bottom: 5px;
+    font-style: italic;
+    overflow: hidden;
+}
+
+
+#editForm {
+    display: none;
+    position: fixed;
+    width: 50%;
+    margin: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#addBook {
+    margin-left: 30%;
+    margin-right: 30%;
+    width:40%;
+}
+
+#closeEdit {
+    background-image: url('close_n.png');
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top:-20px;
+    right:-20px;
+}
+#closeEdit:hover {
+    top:-21px;
+    right:-21px;
+
+}
+
+.editBook, .deleteBook {
+    width:auto;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#editBook {
+    margin-left: 35%;
+    margin-right: 35%;
+    width:30%;
+}
+
+#footer {
+    clear: both;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 780px) {
+    #header {
+        padding: 10px;
+    }
+    #leftSide,#rightSide {
+        width: 100%;
+        float: none;
+    }
+    #editForm {
+        top:100px;
+    }
+}

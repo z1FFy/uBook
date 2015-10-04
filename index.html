@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>uBooks</title>
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="main.js" type="application/javascript"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="wrapper">
+    <div id="header">
+        <h2>uBooks</h2>
+    </div>
+    <div id="leftSide" class="form">
+        <div id="addForm">
+            <input name="author" type="text" placeholder="Автор">
+            <input name="year" type="text" placeholder="Год издания">
+            <input name="name" type="text" placeholder="Название книги">
+            <input name="length" type="text" placeholder="Кол-во страниц">
+            <button id="addBook" class="myButton">Добавить</button>
+        </div>
+    </div>
+
+    <div id="rightSide" class="form">
+    </div>
+</div>
+
+<div id="editForm" class="form">
+    <input name="author" type="text" placeholder="Автор">
+    <input name="year" type="text" placeholder="Год издания">
+    <input name="name" type="text" placeholder="Название книги">
+    <input name="length" type="text" placeholder="Кол-во страниц">
+    <input type="hidden" id="editId">
+
+    <input type="button" id="editBook" class="myButton" value="Изменить">
+    <div id="closeEdit"></div>
+</div>
+<p id="footer">by Denis Kuschenko (ziffyweb@gmail.com)</p>
+</body>
+</html>
